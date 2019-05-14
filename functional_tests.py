@@ -10,11 +10,10 @@ class NewVisitorTest(unittest.TestCase):
 
     def test_can_start_a_list_and_retrieve_it_later(self):
         # go to the website's homepage
-        print('shit')
         self.browser.get('http://localhost:8000')
 
         # the page title and header mention to-do lists
-        self.assertIn('To-Do', browser.title)
+        self.assertIn('To-Do', self.browser.title)
         self.fail('Finish the test!')
 
         # the user is prompted to enter a to do item
